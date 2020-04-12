@@ -1,0 +1,28 @@
+The user names used are : Ryan Reynolds, Mark Ruffalo, Chris Evans, Robert Downey Jr.
+
+From collect.py
+The file collects data from Twitter API. The data of tweets collected is for Robert Downey Jr.
+There are 91 tweets available. The tweets are stored in tweets_data.pkl.
+The tweets collected finds the friends list of each of the screen_name of user
+
+From cluster.py
+After the data is collected from collect.py we try to analyze the cluster formed. Girvan Newman algorithm
+is used to find the number of clusters. Based on their similarity, the communities are formed. A custer/community
+is formed when there are more than 1 user in the group otherwise they are considered as outlier. As all users are clustered in
+one group 
+
+
+From classify.py
+For classify, done sentiment analysis by using the Afinn. Afinn has already scored positive, negative and neutral
+words. We tokens the tweets and award credits accordingly. We are using training data from afinn.
+
+
+From summarize.py
+We write all the results found from above in the summary.txt file
+
+
+Conclusion:
+The main aim of collecting data of these users was to find people's reviews on the Endgame. The reviews will keep changing with time.
+As all users are from Avengers, and belong to the same Hollywood industry the community
+is classified as one as their following and follower are correlated. The tweets collected are mostly based 
+on Deadpool of Ryan Reynolds and Endgame of Avengers of Chris Evans, Robert Downey and Mark Ruffalo.
